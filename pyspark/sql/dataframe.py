@@ -552,7 +552,7 @@ class DataFrame(PandasMapOpsMixin, PandasConversionMixin):
         """
         return self._jdf.isEmpty()
 
-    def show(self, n: int = 20, truncate: Union[bool, int] = False, vertical: bool = False) -> None:
+    def show(self, n: int = 3, truncate: Union[bool, int] = False, vertical: bool = False) -> None:
         """Prints the first ``n`` rows to the console.
 
         .. versionadded:: 1.3.0
