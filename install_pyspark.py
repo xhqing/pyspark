@@ -12,7 +12,7 @@ for p in sys.path:
             print("pyspark package already exist in {}".format(p))
             break
         else:
-            shutil.copytree('/home/coder/project/extra_pkg/pyspark', p+"/pyspark")
+            shutil.copytree('pyspark', p+"/pyspark")
             cp_succeed = True
             break
 
